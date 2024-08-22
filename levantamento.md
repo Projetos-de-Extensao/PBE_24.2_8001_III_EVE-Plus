@@ -46,15 +46,23 @@
 - filtrar filme e serie
 - trailer, resumo do filme
 - criacao de familias, com diferentes perfis para cada um
-- classificassao(mostra ao algoritmo que voce gosta de titulos semelhantes)
+- classificação (mostra ao algoritmo que voce gosta de titulos semelhantes)
 - top10, melhores
 - diferentes linguas,tanto legenda quanto audio
 - continue assistindo
-prime,  etc. 
+- criação de listas personalizadas
+- controle de volume
+- botão próximo episódio
+- maximizar tela
+- retomar mídia do ponto onde parou a partir do menu principal (mostrando em qual minuto parou)
 
 
 **Netflix**
+- adiantar e retroceder alguns segundos
+- listar outros episódios enquanto assiste
+- alterar velocidade de reprodução
 
+  
 **Prime**
 - atores em cena, música tocando
 
