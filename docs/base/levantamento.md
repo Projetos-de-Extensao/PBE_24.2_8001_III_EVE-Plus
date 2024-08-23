@@ -1,3 +1,8 @@
+---
+id: levantamento
+title: Levantamento das caracteristicas principai
+---
+
 # Levantamento de caracteristicas de plataformas de streaming:
 
 ## Audio e Video
