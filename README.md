@@ -10,6 +10,8 @@
 | 202309747511  |  Paula Luiza Rocha de Oliveira |
 | 202305105727  |  Miguel Veiga Gonçalves |
 | 202307164496  |  Ewerton Peixoto de Alencar Arrais |
+| 202307164607  |  Ricardo Santos Lima |
+
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
