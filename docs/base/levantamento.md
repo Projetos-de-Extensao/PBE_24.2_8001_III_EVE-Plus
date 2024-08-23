@@ -1,6 +1,6 @@
 ---
 id: levantamento
-title: Levantamento das caracteristicas principai
+title: Levantamento das caracteristicas  
 ---
 
 # Levantamento de caracteristicas de plataformas de streaming:
