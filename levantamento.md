@@ -4,6 +4,7 @@
 - "favoritar" (adicionar a lista ou curtir a musica)
 - pesquisa por nome
 - filtragem por genero(terror, rock)
+- filtragem por autor/diretor/ator.
 - compartilhamento
 - todos grátis tem forma premium(sem anuncio)
 - possibilidade de baixar o conteudo para usar offline
