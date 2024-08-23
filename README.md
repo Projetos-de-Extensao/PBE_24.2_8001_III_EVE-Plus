@@ -9,7 +9,7 @@
 | 202307623911  |  João Gabriel Tasca Barroso de Assis |
 | 202309747511  |  Paula Luiza Rocha de Oliveira |
 | 202305105727  |  Miguel Veiga Gonçalves |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 202307164496  |  Ewerton Peixoto de Alencar Arrais |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
