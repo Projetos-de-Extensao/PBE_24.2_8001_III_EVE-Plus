@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Brainstorm - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../doc_template/" class="nav-link">Titulo do documento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../levantamento/" class="nav-link">Levantamento de caracteristicas de plataformas de streaming:</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Base</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../5w2h/" class="dropdown-item">5W2H</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Brainstorm</a>
+</li>
+                                    
+<li>
+    <a href="../documento_de_visao/" class="dropdown-item">Documento de Visão</a>
+</li>
+                                    
+<li>
+    <a href="../entrevista/" class="dropdown-item">Entrevista</a>
+</li>
+                                    
+<li>
+    <a href="../mapa_mental/" class="dropdown-item">Mapas Mentais</a>
+</li>
+                                    
+<li>
+    <a href="../metodologia/" class="dropdown-item">Metodologia</a>
+</li>
+                                    
+<li>
+    <a href="../prototipo_alta_fidelidade/" class="dropdown-item">Protótipo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interacao</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interacao/interacao1/" class="dropdown-item">Interação 1</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Modelagem</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../modelagem/" class="dropdown-item">Modelagem</a>
+</li>
+                                    
+<li>
+    <a href="../../modelagem/das/" class="dropdown-item">Documento de Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="../../modelagem/diagrama_de_classes/" class="dropdown-item">Diagrama de Classes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../5w2h/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../documento_de_visao/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#introducao" class="nav-link">Introdução</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#metodologia" class="nav-link">Metodologia</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#brainstorm" class="nav-link">Brainstorm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#versao-10" class="nav-link">Versão 1.0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#perguntas" class="nav-link">Perguntas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="introducao">Introdução</h2>
+<p align = "justify">
+O brainstorm é uma técnica de elicitação de requisitos que consiste em reunir a equipe e discutir sobre diversos tópicos gerais do projeto apresentados no documento problema de negócio. No brainstorm o diálogo é incentivado e críticas são evitadas para permitir que todos colaborem com suas próprias ideias.
+</p>
+
+<h2 id="metodologia">Metodologia</h2>
+<p align = "justify">
+A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+</p>
+
+<h2 id="brainstorm">Brainstorm</h2>
+<h2 id="versao-10">Versão 1.0</h2>
+<h2 id="perguntas">Perguntas</h2>
+<h3 id="1-qual-o-objetivo-principal-da-aplicacao">1. Qual o objetivo principal da aplicação?</h3>
+<p align = "justify">
+<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
+</p>
+
+<p><b>ZZZ</b> - A plataforma deve fornece...</p>
+<p><b>YYYY</b> - O objetivo da aplicação é....</p>
+<p><b>WWWW</b> - O principal objetivo da aplicação é a...</p>
+<p><b>KKKK</b> - A plataforma deve gerenciar...
+</p></p>
+<hr />
+<h3 id="2-como-sera-o-processo-para-cadastrar-um-novo-clientetorneio">2. Como será o processo para cadastrar um novo clientetorneio?</h3>
+<p align = "justify">
+<b>XXXX</b> - O moderador deverá fazer login e...
+
+<b>YYYY</b> - O cliente...
+
+<b>WWWW</b> - Com o usuário logado, ele deverá...
+
+<b>ZZZZ</b> - O cliente...
+
+<b>KKK</b> - O cliente...
+
+---
+
+### 3. Como será a forma de adicionar produtos?
+
+<p align = "justify">
+<b>XXXX</b> - O cliente ao cadastrar...
+</p>
+
+<p align = "justify">
+<b>YYYYY</b> - O produto tem...
+</p>
+
+<b>ZZZZ</b> - O produto....
+
+<b>XXXX</b> - O produto....
+
+
+---
+
+### 4. Outras perguntas pertinentes ao contexto
+
+<p align = "justify">
+<b>XXXX</b> - Com a localização...
+
+<b>YYYY</b> - O cliente...
+
+<b>ZZZ</b> - O cliente...
+
+---
+
+### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
+<p align = "justify">
+<b>XXX</b> - O cliente....
+</p>
+
+### 6. Quais informações seriam interessante para o cliente?
+<p align = "justify">
+   <b>XXX</b> - Informações...
+
+   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+
+   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
+
+</p>
+
+### Requisitos elicitados
+
+|ID|Descrição|
+|----|-------------|
+|BS01| O cliente...|
+|BS02| O cliente...|
+|BS03| O cliente...|
+|BS04| O cliente...|
+|BS05| O cliente...|
+|BS06| O cliente...|
+|BS07| O cliente...|
+|BS08| O cliente...|
+|BS09| O cliente...|
+|BS10| O produto...|
+|BS11| O produto...|
+|BS12| O produto...|
+|BS13| O produto...|
+|BS14| O produto...|
+|BS15| O produto...|
+
+## Conclusão
+<p align = "justify">
+Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
+</p>
+## Referências Bibliográficas
+
+> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
+
+
+## Autor(es)
+| Data | Versão | Descrição | Autor(es) |
+| -- | -- | -- | -- |
+| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |</div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Entrevista - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../doc_template/" class="nav-link">Titulo do documento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../levantamento/" class="nav-link">Levantamento de caracteristicas de plataformas de streaming:</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Base</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../5w2h/" class="dropdown-item">5W2H</a>
+</li>
+                                    
+<li>
+    <a href="../Brainstorm/" class="dropdown-item">Brainstorm</a>
+</li>
+                                    
+<li>
+    <a href="../documento_de_visao/" class="dropdown-item">Documento de Visão</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Entrevista</a>
+</li>
+                                    
+<li>
+    <a href="../mapa_mental/" class="dropdown-item">Mapas Mentais</a>
+</li>
+                                    
+<li>
+    <a href="../metodologia/" class="dropdown-item">Metodologia</a>
+</li>
+                                    
+<li>
+    <a href="../prototipo_alta_fidelidade/" class="dropdown-item">Protótipo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interacao</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interacao/interacao1/" class="dropdown-item">Interação 1</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Modelagem</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../modelagem/" class="dropdown-item">Modelagem</a>
+</li>
+                                    
+<li>
+    <a href="../../modelagem/das/" class="dropdown-item">Documento de Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="../../modelagem/diagrama_de_classes/" class="dropdown-item">Diagrama de Classes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../documento_de_visao/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../mapa_mental/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#introducao" class="nav-link">Introdução</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#metodologia" class="nav-link">Metodologia</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#entrevistas" class="nav-link">Entrevistas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#conclusao" class="nav-link">Conclusão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#referencias" class="nav-link">Referências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#autores" class="nav-link">Autor(es)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="introducao">Introdução</h2>
+<p align = "justify">
+A técnica da entrevista trata-se de uma conversa guiada por um roteiro de perguntas ou tópicos, na qual visa questionar o stakeholders sobre o sistema atual e esclarecer as suas necessidades sobre o sistema que será desenvolvido. A entrevista permite investigação em profundidade sobre um problema, dessa forma coletar uma grande quantidade de informações para o sistema.
+</p>
+
+<h2 id="metodologia">Metodologia</h2>
+<p align = "justify">
+Para esta entrevista optamos por seguir um modelo de entrevista aberta, onde terá uma série de perguntas de apoio pré-definidas com finalidade do stakeholders expor informações importantes para o sistema. As questões são formuladas e filtradas, de acordo com o interesse da equipe com o propósito de orientar o entrevistador durante a entrevista. O entrevistador e entrevistado tem liberdade para abordar qualquer assunto relacionado ao sistema durante a entrevista.
+</p>
+
+<h3 id="roteiro">Roteiro</h3>
+<ul>
+<li>Você.... ?</li>
+<li>Como funcionava.... ?</li>
+<li>Você já usou alguma aplicação.... </li>
+<li>Teve algum problema.... ?</li>
+<li>O que você acha de uma aplicação..... ?</li>
+<li>Para você qual seria o sistema ideal.... ?</li>
+<li>Você gostaria de poder se cadastrar..... </li>
+<li>você gostaria que as informações... </li>
+</ul>
+<h2 id="entrevistas">Entrevistas</h2>
+<h3 id="versao-10">Versão 1.0</h3>
+<h3 id="entrevista-1"><strong>Entrevista 1</strong></h3>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xxxx Pedro</td>
+<td>Entrevistador</td>
+</tr>
+<tr>
+<td>xxxx xxxx</td>
+<td>Entrevistado</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Horário de inicio</th>
+<th>Horário de fim</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>03/09/20</td>
+<td>12:11</td>
+<td>12:38</td>
+<td>Entrevista realizada via hangouts.</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<table>
+<thead>
+<tr>
+<th>Nome do participante</th>
+<th>Diálogo durante a apresentação dos projetos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XXX XXXX:</td>
+<td>Você...</td>
+</tr>
+<tr>
+<td>XXX XXXX:</td>
+<td>Sim....</td>
+</tr>
+<tr>
+<td>XXX XXXX:</td>
+<td>Como...</td>
+</tr>
+<tr>
+<td>XXXX XXXX:</td>
+<td>Já...</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="requisitos-elicitados">Requisitos elicitados</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REQ01</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ02</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ03</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ04</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ05</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ06</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ07</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ08</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ09</td>
+<td>O ...</td>
+</tr>
+<tr>
+<td>REQ10</td>
+<td>O ...</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusao">Conclusão</h2>
+<p align = "justify">
+Através da aplicação da técnica, foi possível elicitar alguns requisitos importantes para o projeto.
+</p>
+
+<h2 id="referencias">Referências</h2>
+<blockquote></blockquote>
+<h2 id="autores">Autor(es)</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DD/MM/YYYY</td>
+<td>1.0</td>
+<td>Criação do documento</td>
+<td>xxx XXXX</td>
+</tr>
+<tr>
+<td>DD/MM/YYYY</td>
+<td>2.0</td>
+<td>Adição da entrevista 1</td>
+<td>XXX XXXX</td>
+</tr>
+<tr>
+<td>DD/MM/YYYY</td>
+<td>2.1</td>
+<td>Adição dos requisitos elicitados e conclusão</td>
+<td>XXXX XXXXX</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
