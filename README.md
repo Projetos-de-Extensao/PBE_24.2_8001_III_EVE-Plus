@@ -14,7 +14,7 @@
 
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+O projeto será sobre uma biblioteca que gostaria de fazer uma plataforma para disponibilizar todos os livros que eles tem disponiveis que tambem possue um filme relacionado.  
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
