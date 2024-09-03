@@ -35,7 +35,7 @@ Para esta entrevista, optamos por seguir um modelo de entrevista aberta, com uma
 
 | Data       | Horário de início | Horário de fim | Descrição                                    |
 |------------|-------------------|----------------|----------------------------------------------|
-| 03/09/2024 | 12:11              | 12:38          | Entrevista realizada via videochamada.       |
+| 03/09/2024 | 12:11              | 12:38          | Entrevista realizada via chat.       |
 
 ### Diálogo durante a apresentação dos projetos
 
