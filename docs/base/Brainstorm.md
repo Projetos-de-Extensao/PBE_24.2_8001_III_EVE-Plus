@@ -2,128 +2,99 @@
 id: brainstorm
 title: Brainstorm
 ---
- 
+
 ## Introdução
-<p align = "justify">
-O brainstorm é uma técnica de elicitação de requisitos que consiste em reunir a equipe e discutir sobre diversos tópicos gerais do projeto apresentados no documento problema de negócio. No brainstorm o diálogo é incentivado e críticas são evitadas para permitir que todos colaborem com suas próprias ideias.
+<p align="justify">
+O brainstorming é uma técnica de elicitação de requisitos que consiste em reunir a equipe para discutir e explorar diversas ideias relacionadas ao projeto. Durante o processo, encorajamos a criatividade e evitamos críticas imediatas, permitindo que cada membro da equipe colabore livremente com suas sugestões e reflexões. O objetivo é identificar as melhores soluções e funcionalidades para o projeto em desenvolvimento.
 </p>
- 
+
 ## Metodologia
-<p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+<p align="justify">
+A equipe realizou diversas sessões de brainstorming. Anotamos as ideias de todos em uma sessão livre. Depois organizamos a reunião com questões preparadas, anotando as respostas e organizando as ideias. Durante a sessão, exploramos diversas propostas e, ao final, consolidamos uma direção para o projeto.
 </p>
- 
+
 ## Brainstorm
- 
-## Versão 1.0
- 
-## Perguntas
- 
-### 1. Qual o objetivo principal da aplicação?
- 
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo clientetorneio?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+### Ideias iniciais discutidas
 
- 
----
- 
-### 4. Outras perguntas pertinentes ao contexto
+Durante a sessão, discutimos cinco conceitos de projetos, cada um com potencial para ser desenvolvido, conforme descrito abaixo:
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
+1. **ChillFlix**: Um serviço de streaming focado em vídeos e áudios relaxantes. A ideia era permitir que os usuários escolhessem sons e vídeos de acordo com o humor, criando uma experiência personalizada para relaxamento, meditação, ou simplesmente descompressão.
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
-
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
+2. **Eve+**: Um projeto divertido que serviria como um serviço de streaming dedicado a vídeos do pokémon Eevee. Embora a ideia fosse leve e descontraída, foi descartada por ser muito nichada e ter pouco valor no longo prazo para o público em geral.
    
-</p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
- 
+3. **Clube do Livro**: Um serviço de streaming de audiobooks, enriquecido com resenhas e materiais complementares, como entrevistas com autores e vídeos de adaptações cinematográficas. Essa ideia foi muito bem recebida devido à crescente popularidade dos audiobooks e à possibilidade de oferecer uma experiência literária mais completa.
+   
+4. **Audio RPG**: Um serviço de streaming para mestres e jogadores de RPG. A ideia era oferecer uma seleção de músicas e sons ambientes para serem utilizados em sessões de RPG, criando uma imersão maior durante as histórias narradas. Foi considerada interessante, mas limitada a um público muito específico.
+   
+5. **Memexandria**: Uma central de memes que reuniria todos os memes da história da internet. Embora a ideia fosse divertida, percebemos que seria difícil organizar e manter uma biblioteca de conteúdo tão volátil e vasto.
+
+### Escolha final: Clube do Livro com Funcionalidades do ChillFlix
+
+Após considerarmos as ideias acima, optamos por desenvolver o **Clube do Livro**, mas com uma adição importante: integrar sons relaxantes e personalizáveis, uma funcionalidade inspirada no projeto **ChillFlix**. Essa combinação nos permite criar um serviço de streaming de audiobooks com uma experiência imersiva, onde o usuário pode adicionar sons de fundo, como chuva ou ondas do mar, enquanto escuta um livro. Isso enriquece a experiência, oferecendo algo único no mercado e ao mesmo tempo aproveitando a crescente demanda por conteúdo multimídia e saúde mental.
+
+## Perguntas e Respostas
+
+### 1. Qual é o objetivo principal da aplicação?
+- O objetivo é criar uma plataforma de streaming de audiobooks que também ofereça sons relaxantes de fundo e conteúdos complementares, como resenhas e entrevistas com autores. O foco é proporcionar uma experiência de leitura mais imersiva, completa e personalizada.
+  
+- A plataforma visa atrair tanto leitores que buscam um serviço prático de audiobooks, quanto aqueles que querem uma experiência relaxante e imersiva, associada ao conteúdo do livro que estão ouvindo.
+  
+- Além de facilitar o acesso a audiobooks, queremos que os usuários tenham a opção de personalizar o ambiente sonoro de acordo com suas preferências, criando uma experiência literária única.
+
+---
+
+### 2. Quais são as principais funcionalidades que a plataforma deve ter?
+1. **Streaming de audiobooks**: A funcionalidade principal, onde os usuários podem ouvir audiobooks com alta qualidade e continuidade.
+2. **Resenhas e análises**: Integração de resenhas e discussões literárias em formato de texto e vídeo, proporcionando um aprofundamento na obra.
+3. **Sons relaxantes e trilhas sonoras personalizáveis**: O usuário poderá adicionar sons de fundo como chuva, ondas do mar, ou música relaxante enquanto escuta um audiobook, criando um ambiente sonoro adaptado às suas preferências.
+4. **Entrevistas e bastidores**: A plataforma também oferecerá conteúdos complementares, como entrevistas com autores e vídeos sobre as adaptações cinematográficas dos livros.
+
+---
+
+### 3. Como será o processo de cadastro e login dos usuários?
+- O cadastro será simples, com a possibilidade de usar e-mail e senha ou autenticação via redes sociais, como Google ou Facebook.
+  
+- A ideia é permitir que o usuário tenha uma experiência rápida de login, sem burocracias, e possa acessar rapidamente suas listas e personalizações.
+
+---
+
+### 4. Como os sons relaxantes serão integrados ao streaming de audiobooks?
+- A interface terá uma seção dedicada onde o usuário poderá escolher sons de fundo para tocar simultaneamente ao audiobook. Será possível ajustar o volume do audiobook e do som ambiente separadamente, permitindo uma personalização completa da experiência sonora.
+
+- Também vamos oferecer playlists pré-definidas, onde sons relaxantes estarão associados automaticamente a determinados gêneros de livros, por exemplo, sons de floresta para livros de fantasia.
+
+---
+
+### 5. Como será o gerenciamento dos conteúdos complementares, como resenhas e entrevistas?
+- Criar uma interface para administradores e críticos literários, permitindo o upload de resenhas em texto e vídeo diretamente na plataforma.
+  
+- A interface do usuário final será dividida em seções, com fácil acesso aos conteúdos complementares diretamente relacionados aos audiobooks que estão escutando.
+
+---
+
+## Requisitos elicitados
+
+1. O sistema deve permitir que o usuário reproduza audiobooks em alta qualidade e que o ponto onde ele parou seja salvo automaticamente para retomá-lo posteriormente.
+
+2. O sistema deve permitir que o usuário adicione sons de fundo relaxantes (ex: chuva, ondas do mar) para tocar simultaneamente enquanto ouve o audiobook.
+
+3. O sistema deve permitir que o usuário ajuste o volume dos sons relaxantes independentemente do volume do audiobook, proporcionando uma personalização completa da experiência.
+
+4. O sistema deve oferecer filtros de busca por título, autor, gênero e ano de publicação para facilitar o acesso aos audiobooks.
+
+5. O sistema deve permitir que o usuário acesse resenhas e análises em formato de texto e vídeo relacionadas ao audiobook que está ouvindo, enriquecendo a experiência de leitura.
+
+
 ## Conclusão
-<p align = "justify">
-Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
+<p align="justify">
+Através do processo de brainstorming, foi possível consolidar a ideia de uma plataforma de streaming que combina o melhor de dois mundos: a praticidade dos audiobooks e a personalização dos sons relaxantes. A partir das discussões, elicitamos requisitos funcionais que guiarão o desenvolvimento do projeto. Este serviço proporcionará uma experiência literária diferenciada e imersiva, trazendo benefícios tanto para leitores quanto para entusiastas de sons relaxantes e multimídia.
 </p>
+
 ## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
- 
+> -
+
 ## Autor(es)
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| Data       | Versão | Descrição             | Autor(es)                         |
+|------------|--------|-----------------------|-----------------------------------|
+| DD/MM/YYYY | 1.0    | Criação do documento   | Equipe do projeto                 |
