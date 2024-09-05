@@ -21,7 +21,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ### Mapa mental 1
  
-[![Mapa mental Entrevista](./MapaMental-Entrevista.png)](MapaMental-Entrevista.png)
+[![Mapa mental Entrevista](./MapaMental_Entrevista.png)](MapaMental_Entrevista.png)
  
  
 ### Mapa mental 2
