@@ -2,8 +2,8 @@
 
  <img src="https://static.wikia.nocookie.net/rijon/images/6/6a/133.gif/revision/latest/thumbnail/width/360/height/360?cb=20231209120806" alt="alt text" width="150px" height="150px">
 
-**Número do Grupo**: 3<br>
-**Código da Disciplina**: FGA0208-T01<br>
+**Número do Grupo**: III<br>
+
 
 ## Alunos
 |Matrícula | Aluno |
