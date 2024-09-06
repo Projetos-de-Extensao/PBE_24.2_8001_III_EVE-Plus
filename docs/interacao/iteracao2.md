@@ -3,7 +3,7 @@ id: interação2
 title: Interação 2
 ---
 
-# Interação 2 (12/09/24 à 25/09/2024)
+# Interação 2 (29/08/24 à 11/09/2024)
 
 
 ## Planejamento de Interação
