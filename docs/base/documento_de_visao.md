@@ -11,29 +11,29 @@ O propósito deste documento é fornecer uma visão geral sobre o projeto que se
 ## Descrição do Problema 
 
 <p align = "justify">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+O EVE+ se propõe a ser uma biblioteca virtual contendo Filmes, series e animações Baseadas em Livros, sejam eles infantis, infanto juvenies ou para um grupo mais maduro de leitores. A plataforma também, sera focada principalmente nos livros, com eles sendo os principais, e os derivados sendo secundarios.
 </p>
 
 ### Problema
 
-Dificuldade em gerenciar e organizar...
+O problema vem do impacto da Falta de gerenciamento, e das licenças audio visuais ou Literarias espalhadas dentre diversas companhias terceiras. EVE+ utilizaria de diversas "Propriedades Intelectuais" vinda de varias empresas diferentes.
 
 ### Impactados
 
-Usuários....
+Os usuarios, Desenvolvedores e Donos podem ser afetado caso EVE+ não trabalhe conforme a lei de "CopyRight" de diversos paises.
 
 ### Consequência
 
-A criação de novos....
+processos, intimações e a remoção de diversos "Produtos" dentro da aplicação.
 
 ### Solução
 
-Desenvolver uma aplicação que integre o streaming de sons relaxantes e audiobooks, permitindo aos usuários personalizar sua experiência auditiva e visual com funções que atendem às suas preferências.
+A solução, seria trabalhar primeiramente com Propriedades intelectuais com mais de 80 anos, tendo em visto que estas ja (em sua maioria) teriam caido em dominio publico, permitindo o uso.
 
 ## Objetivos
 
 <p align = "justify">
-O objetivo da equipe de desenvolvimento é criar uma plataforma de streaming de audiobooks que também ofereça sons relaxantes e conteúdo adicional, proporcionando aos usuários uma experiência literária imersiva e personalizada. Para melhorar a experiência do usuário, a aplicação deve incorporar recursos de streaming, personalização do ambiente sonoro e acesso a conteúdo adicional.
+O objetivo da equipe de desenvolvimento é criar uma plataforma de streaming de audiobooks e livros. Que também ofereça sons relaxantes e conteúdo adicional baseado nas obras postas no site, proporcionando aos usuários uma experiência literária imersiva e personalizada. Para melhorar a experiência do usuário, a aplicação deve incorporar recursos de streaming, personalização do ambiente sonoro e acesso a conteúdo adicional.
 </p>
 
 ## Descrição do Usuário 
@@ -46,7 +46,7 @@ Os usuários serão leitores que buscam uma maneira prática e imersiva de consu
 
 ### Conta
 
-- O cliente poderá se cadastrar utilizando e-mail e senha ou autenticação via redes sociais (Google, Facebook).
+- O cliente poderá se cadastrar utilizando e-mail e senha ou autenticação via redes sociais (Google, Facebook, instagram, etc.).
 - O cliente poderá atualizar suas informações de perfil e preferências de forma fácil e intuitiva.
 
 ### Pesquisa e Navegação
@@ -67,7 +67,7 @@ Os usuários serão leitores que buscam uma maneira prática e imersiva de consu
 ## Restrições
 
 <p align = "justify">
-A aplicação não será responsável...
+A aplicação não será responsável por erros, sustos ou reações ao consumo de audiolivros, filmes etc.
 </p>
 
 ## Referências Bibliográficas
@@ -80,4 +80,3 @@ A aplicação não será responsável...
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
 | DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ | 
-
