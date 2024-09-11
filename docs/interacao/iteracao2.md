@@ -13,27 +13,20 @@ title: Interação 2
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| Matheus|
-| Criar issues no GitHub / ZenHub| Renan|
-| Configuração do grupo do Telegram(configurar bot).|Moacir|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| [Documento de visão](https://github.com/xxx/xxx.md) | |
+| Elaborar [5w2H](https://github.com/xxx/xxx.md) |Todos|
+| [Mapas Mentais](https://github.com/xxx/xxx.md) |Miguel e Paula|
 | [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+|[Entrevistas](https://github.com/xxx/xxx.md) |João|
+|[Prototipação.](https://github.com/xxx/xxx.md) |Paula|
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Todos
 
 ### Dividas da Interação
-- 
-- 
-- 
-- 
+Terminar a prototipação  
+Documento de Visão  
 
 ### Riscos Encontrados
 
@@ -57,14 +50,12 @@ title: Interação 2
 ![pontos negativos](../assets/Sprints/S1-negativos.png)
 
 ### O que podemos melhorar?
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
+- Realizar as issues com antecedencia  
 
 
 ### Ferramentas utilizadas
 
-- Reunião: [Hangouts](https://hangouts.google.com/)
+- Reunião: Whatsapp, Pessoalmente.  
 - Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
 
 
