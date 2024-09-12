@@ -2,62 +2,52 @@
 id: documento_de_visao
 title: Documento de Visão
 ---
+
+# Documento de Visão - Plataforma de Audiobooks com Sons Relaxantes
+
 ## Introdução
 
-<p align = "justify">
-O propósito deste documento é fornecer uma visão geral sobre o projeto que será realizado na disciplina Back-End 2024/2, na Faculdade IBMEC. Sendo assim, Nesse documento serão descritas de maneira resumida as principais funcionalidades, usabilidades, o problema que será abordado e os objetivos da equipe.
-</p>
+O propósito deste documento é fornecer uma visão geral sobre o projeto de desenvolvimento de uma plataforma de streaming de audiobooks com sons relaxantes. Este projeto faz parte da disciplina "Projeto Backend" e visa criar uma experiência de leitura imersiva, onde os usuários podem personalizar o ambiente sonoro durante a leitura dos audiobooks. Neste documento serão descritas as principais funcionalidades, usabilidades, o problema abordado e os objetivos do projeto.
 
-## Descrição do Problema 
+## Descrição do Problema
 
-<p align = "justify">
-O EVE+ se propõe a ser uma biblioteca virtual contendo Filmes, series e animações Baseadas em Livros, sejam eles infantis, infanto juvenies ou para um grupo mais maduro de leitores. A plataforma também, sera focada principalmente nos livros, com eles sendo os principais, e os derivados sendo secundarios.
-</p>
+Com o crescente interesse em audiobooks, os usuários buscam cada vez mais uma experiência personalizada e imersiva. Além disso, muitas pessoas utilizam sons relaxantes para melhorar a concentração e o bem-estar durante a leitura. Contudo, não há uma plataforma que combine esses dois recursos de maneira eficaz, limitando a experiência dos usuários.
 
 ### Problema
 
-O problema vem do impacto da Falta de gerenciamento, e das licenças audio visuais ou Literarias espalhadas dentre diversas companhias terceiras. EVE+ utilizaria de diversas "Propriedades Intelectuais" vinda de varias empresas diferentes.
+Atualmente, os usuários enfrentam dificuldades em encontrar uma solução que integre audiobooks e sons relaxantes de forma personalizada.
 
 ### Impactados
 
-Os usuarios, Desenvolvedores e Donos podem ser afetado caso EVE+ não trabalhe conforme a lei de "CopyRight" de diversos paises.
+Leitores e ouvintes de audiobooks que buscam uma experiência mais imersiva e personalizada, com a adição de sons relaxantes durante a leitura.
 
 ### Consequência
 
-processos, intimações e a remoção de diversos "Produtos" dentro da aplicação.
+A falta de uma plataforma que combine audiobooks e sons relaxantes pode resultar em uma experiência menos imersiva para os usuários, além de diminuir as possibilidades de personalização.
 
 ### Solução
 
-A solução, seria trabalhar primeiramente com Propriedades intelectuais com mais de 80 anos, tendo em visto que estas ja (em sua maioria) teriam caido em dominio publico, permitindo o uso.
+A plataforma de audiobooks com sons relaxantes permitirá que os usuários combinem audiobooks com diferentes tipos de sons ambiente, criando uma experiência única e customizada para cada pessoa. O projeto incluirá funcionalidades de personalização de playlists, recomendações baseadas em histórico e preferências, além da integração com conteúdos complementares, como resenhas e entrevistas com autores.
 
 ## Objetivos
 
-<p align = "justify">
-O objetivo da equipe de desenvolvimento é criar uma plataforma de streaming de audiobooks e livros. Que também ofereça sons relaxantes e conteúdo adicional baseado nas obras postas no site, proporcionando aos usuários uma experiência literária imersiva e personalizada. Para melhorar a experiência do usuário, a aplicação deve incorporar recursos de streaming, personalização do ambiente sonoro e acesso a conteúdo adicional.
-</p>
+O objetivo da equipe de desenvolvimento é criar uma plataforma de streaming de audiobooks que permita aos usuários combinar suas leituras com sons relaxantes, promovendo uma experiência literária imersiva e personalizada. Além disso, o projeto visa oferecer uma interface intuitiva e acessível, possibilitando que os usuários gerenciem suas preferências de leitura e som de forma fácil e eficiente.
 
-## Descrição do Usuário 
+## Descrição do Usuário
 
-<p align = "justify">
-Os usuários serão leitores que buscam uma maneira prática e imersiva de consumir audiobooks. Além disso, o público-alvo inclui aqueles que desejam adicionar uma camada de personalização ao seu ambiente de leitura com sons relaxantes.
-</p>
+Os principais usuários da plataforma serão leitores e ouvintes de audiobooks que procuram uma forma prática de consumir literatura, ao mesmo tempo que buscam uma experiência mais rica e relaxante. O público-alvo inclui pessoas que desejam personalizar o ambiente sonoro durante a leitura, criando um momento mais imersivo e agradável.
 
-## Recursos do produto
+## Recursos do Produto
 
 ### Conta
 
-- O cliente poderá se cadastrar utilizando e-mail e senha ou autenticação via redes sociais (Google, Facebook, instagram, etc.).
+- O cliente poderá se cadastrar utilizando e-mail e senha ou autenticação via redes sociais (Google, Facebook, etc.).
 - O cliente poderá atualizar suas informações de perfil e preferências de forma fácil e intuitiva.
 
 ### Pesquisa e Navegação
 
 - O cliente poderá pesquisar audiobooks e sons relaxantes por título, autor, gênero e outros critérios.
 - O cliente poderá filtrar o conteúdo por categorias como tendências, novidades e recomendações baseadas em histórico e preferências.
-
-### Conteúdos Complementares
-
-- A aplicação integrará resenhas e discussões literárias em formato de texto e vídeo sobre os audiobooks.
-- A aplicação disponibilizará entrevistas com autores e conteúdos sobre adaptações cinematográficas dos livros.
 
 ### Funcionalidades Adicionais
 
@@ -66,9 +56,17 @@ Os usuários serão leitores que buscam uma maneira prática e imersiva de consu
 
 ## Restrições
 
-<p align = "justify">
-A aplicação não será responsável por erros, sustos ou reações ao consumo de audiolivros, filmes etc.
-</p>
+1. **Compatibilidade de dispositivos**: A plataforma será otimizada para navegadores e sistemas operacionais modernos. Versões antigas podem não ser suportadas.
+   
+2. **Capacidade de infraestrutura**: O armazenamento e o número de usuários simultâneos serão limitados pela infraestrutura disponível no início do projeto.
+
+3. **Questões de copyright**: Todo conteúdo de áudio deve estar em conformidade com as leis de direitos autorais. A plataforma não poderá hospedar conteúdo sem a devida autorização legal.
+
+4. **Personalização de áudio**: A sincronização entre audiobooks e sons relaxantes será de responsabilidade do usuário, e a plataforma não garantirá ajuste automático entre narração e som.
+
+5. **Proteção de dados**: A plataforma estará em conformidade com a LGPD e outras regulamentações, e o uso de dados pessoais para personalizações dependerá do consentimento do usuário.
+
+---
 
 ## Referências Bibliográficas
 
