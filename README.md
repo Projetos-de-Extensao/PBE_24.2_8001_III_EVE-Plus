@@ -16,7 +16,7 @@
 
 
 ## Sobre 
-O projeto será sobre uma biblioteca que gostaria de fazer uma plataforma para disponibilizar todos os livros que eles tem disponiveis que tambem possue um filme relacionado.  
+O projeto será uma plataforma de audiobooks que oferece uma experiência personalizada e única, permitindo que os usuários combinem a leitura com sons relaxantes e ambientes. Além disso, a plataforma incluirá acesso a resenhas em formato de texto e vídeo, trilhas sonoras e outros conteúdos multimídia relacionados, proporcionando uma imersão completa no conteúdo escolhido.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
