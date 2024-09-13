@@ -77,4 +77,4 @@ Os principais usuários da plataforma serão leitores e ouvintes de audiobooks q
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ | 
+| 11/09/2024 | 1.0 | Criação do documento | Ewerton, Miguel e Ricardo | 
