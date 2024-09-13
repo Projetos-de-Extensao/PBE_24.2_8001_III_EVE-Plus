@@ -36,32 +36,25 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 [![Prototipo 4](../assets/prototipo/prototipo_4.png)](../assets/prototipo/prototipo_4.png)
  
 ### Tela do Feed
-[![Prototipo 5](../assets/prototipo/prototipo_5.png)](../assets/prototipo/prototipo_5.png)
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528538"> Prototipo 5 </a>
+
+### Tela de Pesquisa 1
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528624"> Prototipo 5 </a>
+
+### Tela de Pesquisa 2
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528758"> Prototipo 5 </a>
  
 ### Tela Feed com configurações
 [![Prototipo 6](../assets/prototipo/prototipo_6.png)](../assets/prototipo/prototipo_6.png)
  
-### Tela Perfil
-[![Prototipo 7](../assets/prototipo/prototipo_7.png)](../assets/prototipo/prototipo_7.png)
+### Tela Perfil 1
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528781"> Prototipo 5 </a>
+
+### Tela Perfil 2 - Atividade
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528940"> Prototipo 5 </a>
  
-### Tela Cadastrar torneio 1
-[![Prototipo 8](../assets/prototipo/prototipo_8.png)](../assets/prototipo/prototipo_8.png)
- 
-### Tela Cadastrar torneio 2
- 
-[![Prototipo 9](../assets/prototipo/prototipo_9.png)](../assets/prototipo/prototipo_9.png)
- 
-### Tela Cadastrar torneio 3
-[![Prototipo 10](../assets/prototipo/prototipo_10.png)](../assets/prototipo/prototipo_10.png)
- 
-### Tela Cadastrar torneio 4
-[![Prototipo 11](../assets/prototipo/prototipo_11.png)](../assets/prototipo/prototipo_11.png)
- 
-### Tela com meus torneios
-[![Prototipo 12](../assets/prototipo/prototipo_12.png)](../assets/prototipo/prototipo_12.png)
- 
-### Tela de inscrição em torneio
-[![Prototipo 13](../assets/prototipo/prototipo_13.png)](../assets/prototipo/prototipo_13.png)
+### Tela com meus Arquivos
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528710"> Prototipo 5 </a>
 
 <p align = "justify">
 Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
