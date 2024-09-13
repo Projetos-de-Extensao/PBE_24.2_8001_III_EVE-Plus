@@ -39,25 +39,25 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 <a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528538"> Prototipo 5 </a>
 
 ### Tela de Pesquisa 1
-<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528624"> Prototipo 5 </a>
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528624"> Prototipo 6 </a>
 
 ### Tela de Pesquisa 2
-<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528758"> Prototipo 5 </a>
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528758"> Prototipo 7 </a>
  
 ### Tela Feed com configurações
 [![Prototipo 6](../assets/prototipo/prototipo_6.png)](../assets/prototipo/prototipo_6.png)
  
 ### Tela Perfil 1
-<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528781"> Prototipo 5 </a>
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528781"> Prototipo 8 </a>
 
 ### Tela Perfil 2 - Atividade
-<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528940"> Prototipo 5 </a>
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528940"> Prototipo 9 </a>
  
 ### Tela com meus Arquivos
-<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528710"> Prototipo 5 </a>
+<a href="https://marvelapp.com/prototype/10i4hhfh/screen/95528710"> Prototipo 10 </a>
 
 <p align = "justify">
-Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
+Na primeira versão do protótipo utilizamos a ferramenta <a href="https://marvelapp.com/">Marvel app</a>  para auxiliar na criação das do aplicativo.
 </p>
  
 ### Versão 2.0
@@ -120,7 +120,5 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
  
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 07/09/20 | 1.0 | Criação do documento | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.1 | Adicionado as imagens do protótipo | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.2 | Adicionado conclusão e referências  | Lucas Alexandre e Matheus Estanislau  |
-| 26/10/20 | 2.0 | Adicionada a versão 2.0 do protótipo| João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan|
+| 07/09/20 | 1.0 | Criação do documento |   |
+| 13/09/24 | 1.1 | Adicionado as primeiras imagens do protótipo | Paula Luiza Rocha de Oliveira  |
