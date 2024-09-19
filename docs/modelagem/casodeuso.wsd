@@ -1,1 +1,35 @@
+@startuml casodeuso
 
+actor "Visitante" as Visitante
+actor "Usuário" as Usuario
+
+usecase "Cadastrar Usuário" as CU01
+usecase "Fazer Login" as CU02
+usecase "Pesquisar Audiobook" as CU03
+usecase "Ouvir Audiobook" as CU04
+usecase "Personalizar Sons Relaxantes" as CU05
+usecase "Gerenciar Playlists" as CU06
+usecase "Avaliar e Comentar Audiobook" as CU07
+usecase "Gerenciar Perfil de Usuário" as CU08
+usecase "Receber Recomendações Personalizadas" as CU09
+usecase "Ver Histórico de Audiobooks Ouvidos" as CU10
+usecase "Favoritar Audiobook" as CU11
+usecase "Fazer Download de Audiobook (Offline)" as CU12
+usecase "Assinar Plano Premium" as CU13
+
+Visitante --> CU01
+
+Usuario --> CU02
+Usuario --> CU03
+Usuario --> CU04
+Usuario --> CU05
+Usuario --> CU06
+Usuario --> CU07
+Usuario --> CU08
+Usuario --> CU09
+Usuario --> CU10
+Usuario --> CU11
+Usuario --> CU12
+Usuario --> CU13
+
+@enduml
