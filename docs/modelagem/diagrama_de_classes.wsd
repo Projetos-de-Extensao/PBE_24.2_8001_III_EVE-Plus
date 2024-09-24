@@ -1,0 +1,163 @@
+@startuml eve-audiobooks
+
+class Usuario{
+    +  id: int
+    + nome: String
+    + email: String
+    + senha: String
+    + planoAssinatura: Plano
+    + playlist: Playlist
+    + favoritos: List<Audiobook>
+    + historico: List<Audiobook>
+
+/Métodos
+    + login() : 
+    + cadastrar()
+    + editarPerfil()
+    + visualizarHistorico()
+    + favoritarAudiobook()
+    + ouvirAudiobook()
+    + receberRecomendacoes()
+
+}
+class Midia{
+    + id: int
+    + titulo: String
+    + duracao: Time
+    + disponivelOffline: Boolean
+
+    /Métodos
+    + reproduzir()
+    + pausar()
+    + alterarVelocidade()
+    + alterarVolume()
+    + pular()
+    + sleep()
+}
+class Livro{
+    + autor: String
+    + genero: String
+    + capitulo: Int
+    + narrador: String
+    + avaliacoes: Avaliacao
+    + comentarios: Comentario
+    + dataPublicacao: date
+    + descricao: String
+
+    /Métodos
+    + avaliar(Usuario usuario)
+    + comentar()
+}
+class Sons{
+    + id: int
+    + tipoSom: String
+    + volume: Int
+
+    /Métodos
+    + reproduzirParalelo()
+}
+class Video{
+    + qualidade: String
+    + legendas: String
+
+    /Métodos
+    + mudarQualidade()
+    + acionarLegendas()
+}
+class Playlist{
+    + id: int
+    + nome: String
+    + livros: list<livros>
+    + sonsRelaxantes: List<Sons>
+
+    /Métodos
+    + criarPlaylist()
+    + adicionarAudiobook()
+    + remover()
+    + reproduzir()
+    + verPlaylist()
+}
+class Conta{
+    - id: int
+    - email: String
+    - senha: String
+    - dataCriacao: DateTime
+    - status: String
+    - planoAtual: Plano
+    - usuario: Usuario
+
+    + login(email: String, senha: String)
+    + atualizarDados(email: String, senha: String)
+    + alterarPlano(novoPlano: Plano)
+    + cancelarConta()
+    + consultarStatus(): String
+}
+class Avaliacao{
+    - id: int
+    - estrelas: int
+    - usuario: Usuario
+    - comentario: String
+
+    + avaliarMidia()
+}
+class Comentario{
+    - id: int
+    - conteudo: String
+    - usuario: Usuario
+    - data: DateTime
+
+    + comentarMidia()
+}
+class Plano{
+    - id: int
+    - nome: String
+    - valor: float
+    - duracao: int
+    - beneficios: List<String>
+
+    + alterarPlano()
+    + consultarPlano()
+}
+class Administrador{
+    - id: int
+    - nome: String
+    - email: String
+    - senha: String
+
+    + gerenciarUsuarios()
+    + gerenciarAudiobooks()
+    + gerarRelatorios()
+}
+class Editora{
+    - id: int
+    - nome: String
+    - audiobooks: List<Audiobook>
+
+    + cadastrarAudiobook(Audiobook audiobook)
+    + gerenciarAudiobooks()
+    + visualizarEstatisticas()
+}
+class Perfil{
+    - nome: String
+    - avatar: img
+    - favoritos: List<Livros>
+
+    + editarNome()
+    + editarAvatar()
+}
+Audio <|-- Livro
+Audio <|-- Sons
+Conta --|> Usuario : "pertence a"
+Conta --|> Plano : "tem plano"
+
+
+Usuario "1" o-- "N" Playlist
+Usuario "1" -- "3" Perfil 
+Usuario "1" o-- Midia : historico, favorito
+Editora "1" -- "N" Livro
+Midia "1" --> "N" Avaliacao
+Midia "1" --> "N" Comentario
+Plano *-- beneficios
+Conta "1" *-- "1" Plano : contém
+
+@enduml

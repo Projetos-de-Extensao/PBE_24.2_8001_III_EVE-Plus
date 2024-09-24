@@ -121,4 +121,4 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
 | 07/09/20 | 1.0 | Criação do documento |   |
-| 13/09/24 | 1.1 | Adicionado as primeiras imagens do protótipo | Paula Luiza Rocha de Oliveira  |
+| 13/09/24 | 1.1 | Adicionado as primeiras imagens do protótipo | Paula Oliveira  |
