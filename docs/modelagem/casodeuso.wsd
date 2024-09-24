@@ -1,7 +1,10 @@
 @startuml casodeuso
+left to right direction
 
 actor "Visitante" as Visitante
 actor "Usuário" as Usuario
+actor "Administrador" as Administrador
+actor "Editora" as Editora
 
 usecase "Cadastrar Usuário" as CU01
 usecase "Fazer Login" as CU02
@@ -17,6 +20,15 @@ usecase "Favoritar Audiobook" as CU11
 usecase "Fazer Download de Audiobook (Offline)" as CU12
 usecase "Assinar Plano Premium" as CU13
 
+usecase "Gerenciar Usuários" as CU14
+usecase "Gerenciar Audiobooks" as CU15
+usecase "Gerenciar Planos de Assinatura" as CU16
+usecase "Gerar Relatórios de Uso" as CU17
+
+usecase "Cadastrar Audiobooks" as CU18
+usecase "Gerenciar Audiobooks Editora" as CU19
+usecase "Acompanhar Estatísticas de Audiobooks" as CU20
+
 Visitante --> CU01
 
 Usuario --> CU02
@@ -31,5 +43,14 @@ Usuario --> CU10
 Usuario --> CU11
 Usuario --> CU12
 Usuario --> CU13
+
+Administrador --> CU14
+Administrador --> CU15
+Administrador --> CU16
+Administrador --> CU17
+
+Editora --> CU18
+Editora --> CU19
+Editora --> CU20
 
 @enduml
