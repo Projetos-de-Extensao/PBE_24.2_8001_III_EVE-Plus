@@ -1,5 +1,7 @@
 # Casos de Uso - Plataforma de Streaming de Audiobooks com Sons Relaxantes
 
+[Diagrama de Casos de Uso](./assets/Casos_De_Uso/casodeuso.png)
+ 
 ## VST: Visitante
 
 ### VST-01: Cadastrar Usuário
