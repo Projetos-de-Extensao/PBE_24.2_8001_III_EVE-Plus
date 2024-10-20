@@ -1,0 +1,26 @@
+@startuml casodeuso
+left to right direction
+
+actor "Usuário Autenticado" as UsuarioAutenticado
+actor "Novo Usuário" as NovoUsuario
+actor "Admin/Equipe de Análise" as AdminEquipeAnalise
+
+usecase "Gerar Link de Convite" as CU01
+usecase "Compartilhar Link de Convite" as CU02
+usecase "Registrar via Link de Convite" as CU03
+usecase "Validar Link de Convite" as CU04
+usecase "Enviar Feedback" as CU05
+usecase "Receber Confirmação de Feedback" as CU06
+usecase "Classificar Feedback" as CU07
+usecase "Analisar Feedback" as CU08
+
+UsuarioAutenticado --> CU01
+UsuarioAutenticado --> CU02
+NovoUsuario --> CU03
+NovoUsuario --> CU04
+UsuarioAutenticado --> CU05
+UsuarioAutenticado --> CU06
+AdminEquipeAnalise --> CU07
+AdminEquipeAnalise --> CU08
+
+@enduml

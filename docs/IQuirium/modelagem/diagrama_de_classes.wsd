@@ -1,0 +1,76 @@
+@startuml eve-IQuirium
+
+class Usuario {
+    + id: int
+    + nome: String
+    + email: String
+    + convitesEnviados: List<Convite>
+    + feedbacksEnviados: List<Feedback>
+
+    /Métodos
+    + gerarLinkConvite(): String
+    + visualizarConvites(): List<Convite>
+    + compartilharConvite(canal: String)
+    + enviarFeedback(texto: String, tipo: String)
+    + visualizarFeedbacks(): List<Feedback>
+}
+
+class Convite {
+    + id: int
+    + link: String
+    + dataEnvio: Date
+    + status: String
+    + usuarioRemetente: Usuario
+
+    /Métodos
+    + validarLink(): Boolean
+    + registrarAceitacao()
+}
+
+class NovoUsuario {
+    + id: int
+    + nome: String
+    + email: String
+    + convite: Convite
+
+    /Métodos
+    + cadastrar()
+    + vincularConvite(convite: Convite)
+}
+
+class Feedback {
+    + id: int
+    + texto: String
+    + tipo: String
+    + dataEnvio: Date
+    + usuario: Usuario
+
+    /Métodos
+    + classificarFeedback(): String
+    + confirmarRecebimento(): String
+}
+
+class EquipeAnalise {
+    + id: int
+    + nome: String
+
+    /Métodos
+    + analisarFeedback(feedback: Feedback)
+    + visualizarFeedbacks(): List<Feedback>
+}
+
+class Sistema {
+    + id: int
+    + nome: String
+
+    /Métodos
+    + validarUsuario(usuario: Usuario): Boolean
+    + vincularNovoUsuario(novoUsuario: NovoUsuario, convite: Convite)
+}
+
+Usuario "1" o-- "N" Convite : envia
+Usuario "1" o-- "N" Feedback : envia
+Convite "1" o-- "1" NovoUsuario : aceita
+EquipeAnalise "1" o-- "N" Feedback : analisa
+
+@enduml

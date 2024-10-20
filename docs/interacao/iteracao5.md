@@ -13,18 +13,8 @@ title: Interação 5
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| Matheus|
-| Criar issues no GitHub / ZenHub| Renan|
-| Configuração do grupo do Telegram(configurar bot).|Moacir|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-
+| Diagrama de casos de uso da IQuirium|Todos|
+| Diagrama de classes da IQuirium|Todos|
 ## Sprint Retrospective/Review Meeting
 
 #### Presentes na reunião: XXXX
@@ -64,8 +54,8 @@ title: Interação 5
 
 ### Ferramentas utilizadas
 
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Whatsapp, Discord
+
 
 
 
