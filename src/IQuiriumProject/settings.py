@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'content_app',
     'member_get_member',
+    'feedback_member',
 ]
 
 MIDDLEWARE = [

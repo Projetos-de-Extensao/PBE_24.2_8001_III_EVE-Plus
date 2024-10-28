@@ -1,10 +1,10 @@
 from django.contrib import admin
 from member_get_member import models
-from .models import Convite
+from .models import Convite, Member
 
 class ConviteAdmin(admin.ModelAdmin):
     # Oculta os campos no Django Admin
-    exclude = ('userRemetente','status',)
+    exclude = ('userRemetente','link')
 
     def save_model(self, request, obj, form, change):
         # Define o userRemetente como o usuário logado, se não estiver definido
@@ -12,6 +12,18 @@ class ConviteAdmin(admin.ModelAdmin):
             obj.userRemetente = request.user.member
         obj.save()
 
+class MemberAdmin(admin.ModelAdmin):
+    # Oculta os campos no Django Admin
+    exclude = ('user',)
+    # Define o usuário como o usuário logado, se não estiver definido
+    def save_model(self, request, obj, form, change):
+        # Define o usuário como o usuário logado, se não estiver definido
+        if not obj.user_id:
+            obj.user = request.user
+        obj.save()
+
+
+
 # Registra os modelos no Django Admin
-admin.site.register(models.Member)
+admin.site.register(Member,MemberAdmin)
 admin.site.register(Convite, ConviteAdmin)
