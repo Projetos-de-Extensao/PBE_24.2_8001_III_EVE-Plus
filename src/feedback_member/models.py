@@ -5,6 +5,7 @@ class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='member_profile')
     nome = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
+    feedbacks = models.ManyToManyField('Feedback', related_name='member_feedbacks')
 
     def __str__(self):
         return self.nome
@@ -29,7 +30,7 @@ class Feedback(models.Model):
         ('Comentário', 'Comentário'),
         ('Sugestão', 'Sugestão'),
     ]
-    member = models.ForeignKey(Member, on_delete=models.CASCADE, related_name='feedbacks')
+    member = models.ForeignKey(Member, on_delete=models.CASCADE, related_name='feedback')
     feedback = models.TextField()
     tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, default='Comentário')
     data = models.DateTimeField(auto_now_add=True)

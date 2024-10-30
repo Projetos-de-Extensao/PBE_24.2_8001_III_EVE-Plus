@@ -1,7 +1,14 @@
-----MGM
+@startuml
+
+
 class Member {
     + nome: String
     + email: String
+    + recompensa: int
+    + convites: List<Convite>
+
+    /Métodos
+    + verificar_convites(): List<Convite>
 }
 
 class Convite {
@@ -19,12 +26,10 @@ class Convite {
     + validarConvite():
 }
 
-----FU
 class Usuario {
     + id: int
     + nome: String
     + email: String
-    + convitesEnviados: List<Convite>
     + feedbacksEnviados: List<Feedback>
 
     /Métodos
@@ -43,5 +48,7 @@ class Feedback {
     + analisarFeedback(feedback: Feedback)
     + visualizarFeedbacks(): List<Feedback>
 }
+
+@enduml
 
 
