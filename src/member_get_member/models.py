@@ -39,7 +39,7 @@ class Convite(models.Model):
     ]
     userRemetente = models.ForeignKey(Member, related_name='convites_enviados', on_delete=models.CASCADE)
     userDestinatario = models.EmailField(unique= True)
-    link = models.CharField(blank=True,max_length=255, unique=True)
+    link = models.CharField(primary_key=True,blank=True,max_length=255, unique=True)
     # Status - quando o email for cadastrado mudara para aceito e quando passar a data de expiracao que pode ser e 1 semana mudara para expirado
     status = models.CharField(max_length=50, choices=STATUS_CHOICES, default='Pendente')
     data_envio = models.DateTimeField(auto_now_add=True)
