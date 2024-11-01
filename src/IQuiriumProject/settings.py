@@ -27,17 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Configurações de fuso horário e localização
-LANGUAGE_CODE = 'pt-br'
-TIME_ZONE = 'America/Sao_Paulo'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
-
-# Formatos de data e hora
-DATETIME_FORMAT = 'd/m/Y H:i:s'
-DATE_FORMAT = 'd/m/Y'
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'content_app',
     'member_get_member',
     'feedback_member',
 ]
@@ -117,13 +105,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+# Configurações de fuso horário e localização
+LANGUAGE_CODE = 'pt-br'
+TIME_ZONE = 'America/Sao_Paulo'
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
+
+# Formatos de data e hora
+DATETIME_FORMAT = 'd/m/Y  H:i:s'
+DATE_FORMAT = 'd/m/Y'
 
 
 # Static files (CSS, JavaScript, Images)

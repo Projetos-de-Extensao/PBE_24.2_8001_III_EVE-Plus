@@ -16,16 +16,16 @@ class Member(models.Model):
     email = models.EmailField(unique=True)
     recompensas = models.IntegerField(default=0)
     convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
-    qtd_convites = models.IntegerField(blank=True,default=0)
-
-    def enviar_convite(self, email_destinatario):
-        if self.qtd_convites >= 5:
-            raise ValueError("Limite de convites mensais atingido.")
-        convite = Convite.objects.create(userRemetente=self, userDestinatario=email_destinatario)
-        self.convites.add(convite)
-        self.save()
-        return convite
-
+    
+    def checkar(self):
+        if self.verificar_qntd_convites():
+            self.verificar_convites_aceitos()
+    
+    def verificar_qntd_convites(self):
+        if self.convites.count() >= 5:
+            return False
+        return True
+        
     def verificar_convites_aceitos(self):
         for convite in self.convites_enviados.all():
             if convite.status == 'Aceito':
