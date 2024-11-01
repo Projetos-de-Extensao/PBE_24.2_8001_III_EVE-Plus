@@ -6,6 +6,7 @@ import uuid
 from datetime import timedelta
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+import pytz
 
 
 
@@ -15,6 +16,15 @@ class Member(models.Model):
     email = models.EmailField(unique=True)
     recompensas = models.IntegerField(default=0)
     convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
+    qtd_convites = models.IntegerField(blank=True,default=0)
+
+    def enviar_convite(self, email_destinatario):
+        if self.qtd_convites >= 5:
+            raise ValueError("Limite de convites mensais atingido.")
+        convite = Convite.objects.create(userRemetente=self, userDestinatario=email_destinatario)
+        self.convites.add(convite)
+        self.save()
+        return convite
 
     def verificar_convites_aceitos(self):
         for convite in self.convites_enviados.all():
@@ -48,13 +58,14 @@ class Convite(models.Model):
         return f"Convite para {self.userDestinatario} - Status: {self.status} - Token: {self.link}"
 
     def save(self, *args, **kwargs):
-        # Verifica convites aceitos para atualizar o número de recompensas
-        Member.verificar_convites_aceitos(self.userRemetente)
         # Gera link de convite se ainda não tiver sido gerado
         if not self.link:
-            self.link = {str(uuid.uuid4())}
+            self.link = str(uuid.uuid4())
+        # Tentativa de definicao de timezone para sao paulo
+        self.data_envio = timezone.now().astimezone(pytz.timezone('America/Sao_Paulo'))
         # Salva o convite
         super().save(*args, **kwargs)
+        self.userRemetente.verificar_convites_aceitos()
 
     """
     def registrar_aceitacao(self):
@@ -72,3 +83,11 @@ class Convite(models.Model):
             return False
         return True
     """
+@receiver(post_save, sender=User)
+def create_member(sender, instance, created, **kwargs):
+    if created:
+        Member.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_member(sender, instance, **kwargs):
+    instance.member.save()
