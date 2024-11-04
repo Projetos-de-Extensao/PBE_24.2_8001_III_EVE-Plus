@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Conteúdo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Conteúdos Disponíveis</h1>
+
+    <!-- Formulário para adicionar conteúdo -->
+    <div class="form-section">
+        <h2>Mandar Convite</h2>
+        <form id="inviteForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Enviar convite</button>
+        </form>
+    </div>
+
+    <!-- Listagem de conteúdos -->
+    <div class="content-list">
+        <h2>Convites</h2>
+        <table id="conviteTable">
+            <thead>
+                <tr>
+                    <th>Token</th>
+                    <th>UserID</th>
+                    <th>Email Destinatario</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Conteúdos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-section">
+        <h2>Enviar Feedback</h2>
+        <form id="feedbackForm">
+            <input type="text" id="feedback" placeholder="Feedback" required>
+            <select id="content_type">
+                <option value="comentarios">Comentários gerais</option>
+                <option value="sugestoes">Sugestões de melhoria</option>
+                <option value="problemas">Problemas técnicos</option>
+            </select>
+            <button type="submit">Adicionar Feedback</button>
+        </form>
+    </div>
+
+    <div class="content-list">
+        <h2>Feedbacks</h2>
+        <table id="feedbackTable">
+            <thead>
+                <tr>
+                    <th>FeedbackID</th>
+                    <th>Feedback</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>UserID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Conteúdos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

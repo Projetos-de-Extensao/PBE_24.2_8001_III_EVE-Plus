@@ -17,20 +17,23 @@ class Member(models.Model):
     recompensas = models.IntegerField(default=0)
     convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
     
-    def checkar(self):
-        if self.verificar_qntd_convites():
-            self.verificar_convites_aceitos()
-    
-    def verificar_qntd_convites(self):
-        if self.convites.count() >= 5:
-            return False
-        return True
-        
+    def enviar_convite(self, email_destinatario):
+        if self.contar_convites_mes_atual() >= 5:
+            raise ValueError("Limite de convites mensais atingido.")
+        convite = Convite.objects.create(userRemetente=self, userDestinatario=email_destinatario)
+        self.convites.add(convite)
+        self.save()
+        return convite
+
+    def contar_convites_mes_atual(self):
+        agora = timezone.now()
+        inicio_mes = agora.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+        return self.convites_enviados.filter(data_envio__gte=inicio_mes).count()
+
     def verificar_convites_aceitos(self):
         for convite in self.convites_enviados.all():
             if convite.status == 'Aceito':
                 convites_aceitos = self.convites_enviados.filter(status='Aceito').count()
-                # Atualiza a recompensa diretamente no banco de dados
                 self.recompensas = convites_aceitos
                 Member.objects.filter(pk=self.pk).update(recompensas=convites_aceitos)
 
