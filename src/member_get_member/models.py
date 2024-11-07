@@ -70,6 +70,11 @@ class Convite(models.Model):
         super().save(*args, **kwargs)
         self.userRemetente.verificar_convites_aceitos()
 
+        def is_expirado(self):
+            validade = self.data_envio + timedelta(days=7)
+            return timezone.now() > validade
+        # Verifica se o convite expirou em 1 semana
+
     """
     def registrar_aceitacao(self):
         if self.status == 'Pendente' and self.validar_link():
