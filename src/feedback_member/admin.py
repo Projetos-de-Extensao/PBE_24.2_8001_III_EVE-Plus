@@ -1,37 +1,34 @@
 from django.contrib import admin
 from .models import Feedback, Member
 
+# Inline para exibir feedbacks na página de detalhes de um Member
+class FeedbackInline(admin.TabularInline):
+    model = Feedback
+    fields = ['feedback', 'data', 'tipo']
+    readonly_fields = ['data']  # Campos de leitura
+    extra = 0  # Evita criação automática de novos feedbacks
+
 class MemberAdmin(admin.ModelAdmin):
-    # Oculta os campos no Django Admin
-    exclude = ('nome','user','email')
-    # Define o usuário como o usuário logado, se não estiver definido
+    exclude = ('nome', 'user', 'email')  # Oculta os campos
+    inlines = [FeedbackInline]  # Adiciona feedbacks na página de detalhes de um Member
+
     def save_model(self, request, obj, form, change):
-        # Define o usuário como o usuário logado, se não estiver definido
         if not obj.user_id:
             obj.user = request.user
-        obj.save()
-
-        if not obj.nome:
-            obj.nome = obj.user.username
-        obj.save()
-
-        if not obj.email:
-            obj.email = obj.user.email
+        obj.nome = obj.nome or obj.user.username
+        obj.email = obj.email or obj.user.email
         obj.save()
 
 class FeedbackAdmin(admin.ModelAdmin):
-    # Oculta os campos no Django Admin
-    exclude = ('member',)
+    exclude = ('member',)  # Oculta o campo member no FeedbackAdmin
 
     def save_model(self, request, obj, form, change):
-        # Verifica se o usuário logado tem um perfil Member
-        if hasattr(request.user, 'member_profile'):
-            # Define o member como o perfil do usuário logado, se não estiver definido
-            obj.member = request.user.member_profile
+        if hasattr(request.user, 'member'):
+            obj.member = request.user.member  # Define o member como o perfil do usuário logado
             obj.save()
         else:
             raise ValueError("O usuário logado não possui um perfil Member associado.")
 
 # Registra os modelos no Django Admin
-admin.site.register(Feedback, FeedbackAdmin)
 admin.site.register(Member, MemberAdmin)
+admin.site.register(Feedback, FeedbackAdmin)

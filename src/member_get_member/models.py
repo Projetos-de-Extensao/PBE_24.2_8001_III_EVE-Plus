@@ -15,7 +15,7 @@ class Member(models.Model):
     nome = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
     recompensas = models.IntegerField(default=0)
-    convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
+    #convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
     
     def enviar_convite(self, email_destinatario):
         if self.contar_convites_mes_atual() >= 5:
