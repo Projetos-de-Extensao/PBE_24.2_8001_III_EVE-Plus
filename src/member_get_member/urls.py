@@ -1,7 +1,7 @@
 from rest_framework.routers import DefaultRouter
-from .views import ConviteViewSet
+from .views import ConviteViewSet, FeedbackViewSet
 
 router = DefaultRouter()
-router.register(r'member_get', ConviteViewSet)
-
+router.register(r'getmember', ConviteViewSet)
+router.register(r'feedback', FeedbackViewSet)
 urlpatterns = router.urls

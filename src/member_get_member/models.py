@@ -12,10 +12,10 @@ import pytz
 
 class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    nome = models.CharField(max_length=255)
-    email = models.EmailField(unique=True)
+    #nome = models.CharField(max_length=255)
+    #email = models.EmailField(unique=True)
     recompensas = models.IntegerField(default=0)
-    convites = models.ManyToManyField('Convite', related_name='membros_convidados', blank=True)
+    
     
     def enviar_convite(self, email_destinatario):
         if self.contar_convites_mes_atual() >= 5:
@@ -41,7 +41,7 @@ class Member(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.nome
+        return super.User.first_name
     
 
 class Convite(models.Model):
@@ -94,3 +94,30 @@ def create_member(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_member(sender, instance, **kwargs):
     instance.member.save()
+
+class Feedback(models.Model):
+    TIPO_CHOICES = [
+        ('Comentários gerais', 'Comentários gerais'),
+        ('Sugestões de melhoria', 'Sugestões de melhoria'),
+        ('Problemas tecnicos', 'Problemas tecnicos'),  # Relato de erros ou problemas técnicos.
+    ]
+    member = models.ForeignKey(Member, on_delete=models.CASCADE, related_name='feedback')
+    feedback = models.TextField(blank=True, null=True)
+    tipo = models.CharField(max_length=50, choices=TIPO_CHOICES, default='Comentários gerais')
+    data = models.DateTimeField(auto_now_add=True) #deve ser data e hr pt/br ou hr do computador
+
+    def __str__(self):
+        return f'{self.tipo} : feito por {self.member.nome} -> {self.data}'
+    
+    def enviar_feedback(self, feedback_texto, tipo):
+        """
+        Envia um feedback sobre o produto.
+        """
+        feedback = Feedback.objects.create(user=self.user, feedback=feedback_texto, tipo=tipo)
+        return feedback
+    
+    def listar_feedbacks(self):
+        """
+        Lista todos os feedbacks enviados pelo usuário.
+        """
+        return Feedback.objects.filter(user=self.user)

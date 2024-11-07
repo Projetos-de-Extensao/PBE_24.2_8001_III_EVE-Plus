@@ -1,0 +1,34 @@
+@startuml
+
+class User {
+    +id: int
+    +username: str
+    +password: str
+    +email: str
+    +date_joined: datetime
+    +is_active: bool
+    +is_authenticated(): bool
+}
+
+class Invitation {
+    +id: int
+    +inviter: User
+    +invitee: User
+    +invite_code: UUID
+    +created_at: datetime
+    +accepted_at: datetime
+    +is_active: bool
+    +accept_invitation(User): void
+}
+
+class InvitationService {
+    +generate_invitation(inviter: User): Invitation
+    +validate_invite(invite_code: UUID): bool
+    +register_with_invite(invite_code: UUID, username: str, password: str): User
+}
+
+User "1" -- "0..*" Invitation: invites
+User "1" -- "0..1" Invitation: receives
+Invitation -- InvitationService
+
+@enduml
