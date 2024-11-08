@@ -49,7 +49,6 @@ async function fetchFeedbacks() {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', fetchConvites);
 document.addEventListener('DOMContentLoaded', fetchFeedbacks);
 document.getElementById("inviteForm").addEventListener("submit", addConvite);

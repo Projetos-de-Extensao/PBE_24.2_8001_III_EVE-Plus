@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'member_get_member',
-    'feedback_member',
+    'IQuiriumApp',
     'corsheaders',
 ]
 

@@ -19,8 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('member_get_member.urls')),
-    path('api/', include('feedback_member.urls')),
+    path('api/', include('IQuiriumApp.urls')),
 ]
 
 
