@@ -3,7 +3,16 @@ const apiUrlFeedback = 'http://127.0.0.1:8000/api/feedbacks/';
 
 async function fetchConvites() {
     try {
-        const response = await fetch(apiUrlMemberGetMember);
+        const response = await fetch(apiUrlMemberGetMember, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Token c1c82e123abc123abcde4567def01234abcd5678',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
         const data = await response.json();
         const contentTable = document.querySelector("#conviteTable tbody");
         contentTable.innerHTML = "";
@@ -27,7 +36,16 @@ async function fetchConvites() {
 
 async function fetchFeedbacks() {
     try {
-        const response = await fetch(apiUrlFeedback);
+        const response = await fetch(apiUrlFeedback, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Token c1c82e123abc123abcde4567def01234abcd5678',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
         const data = await response.json();
         const contentTable = document.querySelector("#feedbackTable tbody");
         contentTable.innerHTML = "";

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'IQuiriumApp',
     'corsheaders',
-    'rest_authtoken',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
