@@ -79,12 +79,18 @@ class Convite(models.Model):
         # Tentativa de definicao de timezone para sao paulo
         self.data_envio = timezone.now().astimezone(pytz.timezone('America/Sao_Paulo'))
         # Salva o convite
+        self.is_expirado()
+        # Verifica se o convite expirou em 1 semana
         super().save(*args, **kwargs)
         self.userRemetente.verificar_convites_aceitos()
 
-        def is_expirado(self):
-            validade = self.data_envio + timedelta(days=7)
-            return timezone.now() > validade
+    def is_expirado(self):
+        validade = self.data_envio + timedelta(days=7)
+        if timezone.now() > validade:
+            self.status = 'Expirado'
+            self.save()
+            return True
+        return False
         # Verifica se o convite expirou em 1 semana
 
     """
