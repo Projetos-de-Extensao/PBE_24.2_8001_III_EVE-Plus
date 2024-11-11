@@ -1,0 +1,54 @@
+@startuml
+
+
+class Member {
+    + nome: String
+    + email: String
+    + recompensa: int
+    + convites: List<Convite>
+
+    /Métodos
+    + verificar_convites(): List<Convite>
+}
+
+class Convite {
+    + remetente: usuario
+    + destinatario: email
+    + link: String
+    + dataEnvio: Date
+    + status: String
+
+    /Métodos
+    + gerarLink(): Link
+    + validarLink(): Boolean
+    + registrarAceitacao()
+    + recompense():
+    + validarConvite():
+}
+
+class Usuario {
+    + id: int
+    + nome: String
+    + email: String
+    + feedbacksEnviados: List<Feedback>
+
+    /Métodos
+    + enviarFeedback(texto: String, tipo: String)
+    + visualizarFeedbacks(): List<Feedback>
+}
+
+class Feedback {
+    + texto: String
+    + tipo: analise, ...
+    + dataEnvio: Date
+    + usuario: Usuario
+
+    /Métodos
+    + classificarFeedback(): String
+    + analisarFeedback(feedback: Feedback)
+    + visualizarFeedbacks(): List<Feedback>
+}
+
+@enduml
+
+
