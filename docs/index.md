@@ -1,6 +1,6 @@
 # EVE+ 
 
-![Eve+](https://static.wikia.nocookie.net/rijon/images/6/6a/133.gif/revision/latest/thumbnail/width/360/height/360?cb=20231209120806 "Image Title")
+![Eve+](https://static.wikia.nocookie.net/rijon/images/6/6a/133.gif/revision/latest/thumbnail/width/360/height/360?cb=20231209120806)
 
 **Número do Grupo**: III<br>
 
