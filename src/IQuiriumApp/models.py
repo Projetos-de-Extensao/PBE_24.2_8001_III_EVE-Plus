@@ -17,17 +17,22 @@ class Member(models.Model):
     recompensas = models.IntegerField(default=0)
 
     def enviar_convite(self, email_destinatario):
-        if self.contar_convites_mes_atual() >= 5:
+        if self.n_convites() >= 5:
             raise ValueError("Limite de convites mensais atingido.")
-        convite = Convite.objects.create(userRemetente=self, userDestinatario=email_destinatario)
-        self.convites.add(convite)
-        self.save()
-        return convite
+        else:
+            convite = Convite.objects.create(userRemetente=self, userDestinatario=email_destinatario)
+            self.convites_enviados.add(convite)
+            self.save()
+            return convite
 
     def contar_convites_mes_atual(self):
         agora = timezone.now()
         inicio_mes = agora.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
         return self.convites_enviados.filter(data_envio__gte=inicio_mes).count()
+    
+    @property
+    def n_convites(self):
+        return self.contar_convites_mes_atual()
 
     def verificar_convites_aceitos(self):
         for convite in self.convites_enviados.all():

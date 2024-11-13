@@ -37,7 +37,8 @@ class FeedbackAdmin(admin.ModelAdmin):
 class MemberAdmin(admin.ModelAdmin):
     exclude = ('user',)  # Oculta campos específicos
     inlines = [ConviteInline, FeedbackInline]  # Adiciona convites na página de detalhes de um Member
-
+    list_display = ('user', 'recompensas', 'n_convites')  # Exibe 'n_convites' na lista de membros
+    
     def save_model(self, request, obj, form, change):
         if not obj.user_id:
             obj.user = request.user
