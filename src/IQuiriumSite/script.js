@@ -6,7 +6,7 @@ async function fetchConvites() {
         const response = await fetch(apiUrlMemberGetMember, {
             method: 'GET',
             headers: {
-                'Authorization': 'Token c1c82e123abc123abcde4567def01234abcd5678',
+                'Authorization': 'token 091e0b579fd7e1064243c0eb620bb387fc4d9cbd',
                 'Content-Type': 'application/json'
             }
         })
@@ -39,7 +39,7 @@ async function fetchFeedbacks() {
         const response = await fetch(apiUrlFeedback, {
             method: 'GET',
             headers: {
-                'Authorization': 'Token c1c82e123abc123abcde4567def01234abcd5678',
+                'Authorization': 'token 091e0b579fd7e1064243c0eb620bb387fc4d9cbd',
                 'Content-Type': 'application/json'
             }
         })
