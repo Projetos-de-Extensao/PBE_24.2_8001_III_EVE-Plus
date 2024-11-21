@@ -1,53 +1,39 @@
-@startuml
-
+@startuml diagrama de classes
 
 class Member {
-    + nome: String
-    + email: String
-    + recompensa: int
-    + convites: List<Convite>
+    + user: User
+    + recompensas: int
 
-    /Métodos
-    + verificar_convites(): List<Convite>
+    + enviarConvite(emailDestinatario: String): Convite
+    + contarConvitesMesAtual(): int
+    + verificarConvitesAceitos(): void
+    + enviarFeedback(feedbackTexto: String, tipo: String): Feedback
+    + listarFeedbacks(): List<Feedback>
 }
 
 class Convite {
-    + remetente: usuario
-    + destinatario: email
+    + userRemetente: Member
+    + userDestinatario: String
     + link: String
     + dataEnvio: Date
     + status: String
 
-    /Métodos
-    + gerarLink(): Link
-    + validarLink(): Boolean
-    + registrarAceitacao()
-    + recompense():
-    + validarConvite():
-}
-
-class Usuario {
-    + id: int
-    + nome: String
-    + email: String
-    + feedbacksEnviados: List<Feedback>
-
-    /Métodos
-    + enviarFeedback(texto: String, tipo: String)
-    + visualizarFeedbacks(): List<Feedback>
+    + isExpirado(): Boolean
 }
 
 class Feedback {
-    + texto: String
-    + tipo: analise, ...
-    + dataEnvio: Date
-    + usuario: Usuario
+    + member: Member
+    + feedback: String
+    + tipo: String
+    + data: Date
 
-    /Métodos
     + classificarFeedback(): String
-    + analisarFeedback(feedback: Feedback)
-    + visualizarFeedbacks(): List<Feedback>
+    + analisarFeedback(): void
 }
+
+User <|-- Member
+Member "1" --> "many" Convite
+Member "1" --> "many" Feedback
 
 @enduml
 
